@@ -18,11 +18,11 @@ describe('(Component) Header', () => {
 
   describe('Navigation links...', () => {
 
-    it('Should render an IndexLink to Home route', () => {
+    it('renders an IndexLink to Home route', () => {
       expect(_wrapper.contains(<IndexLink to='/'/>)).to.equal.true
     })
 
-    it('Should render an Link to Counter route)', () => {
+    it('renders an Link to Counter route)', () => {
       expect(_wrapper.contains(<Link to='/counter'/>)).to.equal.true
     })
 
