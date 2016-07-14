@@ -1,9 +1,11 @@
 import React from 'react'
 import classes from './EditorIndex.scss'
 
+import AceEditor from '../../../components/AceEditor'
+
 export const EditorIndex = () => (
   <div>
-    <h4>Welcome!</h4>
+    <AceEditor id="default" />
   </div>
 )
 
