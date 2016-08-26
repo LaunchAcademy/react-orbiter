@@ -7,7 +7,7 @@ import { changeBuffer } from '../modules/buffers'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
-export default class Editor extends Component {
+export default class BufferEditor extends Component {
   constructor () {
     super()
     this.updateCode = this.updateCode.bind(this)
@@ -42,5 +42,5 @@ function mapDispatchToProps (dispatch){
   return bindActionCreators({changeBuffer}, dispatch);
 }
 
-export default connect(bindStateToProps, mapDispatchToProps)(Editor)
+export default connect(bindStateToProps, mapDispatchToProps)(BufferEditor)
 
