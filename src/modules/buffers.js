@@ -1,5 +1,6 @@
 export const ACTION_PREFIX = 'orbiter/buffers/'
 export const BUFFER_CHANGED = `${ACTION_PREFIX}/BUFFER_CHANGED`
+
 export function changeBuffer(bufferIndex = 0, code){
   return {
     type: BUFFER_CHANGED,
@@ -18,6 +19,6 @@ export default function(state = INITIAL_STATE, action) {
     }]
   }
   else {
-    return INITIAL_STATE
+    return state
   }
 }

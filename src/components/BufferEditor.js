@@ -7,7 +7,7 @@ import { changeBuffer } from '../modules/buffers'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
-export default class BufferEditor extends Component {
+export class BufferEditor extends Component {
   constructor () {
     super()
     this.updateCode = this.updateCode.bind(this)
