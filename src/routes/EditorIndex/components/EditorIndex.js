@@ -1,12 +1,16 @@
 import React from 'react'
-import classes from './EditorIndex.scss'
 
-import AceEditor from '../../../components/AceEditor'
+import BrowserWindow from '../../../components/BrowserWindow'
+import BufferEditor from '../../../components/BufferEditor'
+import CheckButton from '../../../components/CheckButton'
 
-export const EditorIndex = () => (
+const EditorIndex = () => (
   <div>
-    <AceEditor id="default" />
+    <BufferEditor className="editor" />
+    <BrowserWindow id="browser-window" />
+    <CheckButton />
   </div>
 )
 
 export default EditorIndex
+
